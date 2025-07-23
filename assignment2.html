@@ -6,8 +6,20 @@
     <title>Temperature</title>
     <style>
         body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
             font-family: aria;
             background-color: lightskyblue;
+        }
+        button{
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+        .temp{
+            font-size: 20px;
         }
     </style>
 </head>
@@ -15,6 +27,10 @@
     <h1>Convert Celsius to Fahrenheit</h1>
 
     <button onclick="convertToFahrenheit()">Convert Celsius to Fahrnheit</button>
+
+    <div id="temp">
+
+    </div>
 
     <script src="./scripts/assignment2.js"></script>
     
