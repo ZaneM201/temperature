@@ -6,33 +6,34 @@
     <title>Temperature</title>
     <style>
         body{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            margin-top: 300px;
             text-align: center;
-            font-family: aria;
-            background-color: lightskyblue;
+            font-family: arial;
+            background-color: lightgrey;
         }
         button{
+            background-color: green;
+            border: solid, 1px, green;
+            border-radius: 5px;
+            color: white;
+            font-size: 20px;
             margin-left: auto;
             margin-right: auto;
-            width: 100%;
+            padding: 10px;
+            width: 25%;
         }
-        .temp{
+        div{
+            background-color: aqua;
+            border-radius: 5px;
             font-size: 20px;
         }
     </style>
 </head>
 <body>
     <h1>Convert Celsius to Fahrenheit</h1>
-
     <button onclick="convertToFahrenheit()">Convert Celsius to Fahrnheit</button>
-
-    <div id="temp">
-
+    <div id="temp">     
     </div>
-
     <script src="./scripts/assignment2.js"></script>
-    
 </body>
 </html>
