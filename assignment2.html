@@ -6,10 +6,17 @@
     <title>Temperature</title>
     <style>
         body{
-            margin-top: 300px;
+            margin-top: 150px;
             text-align: center;
             font-family: arial;
             background-color: lightgrey;
+        }
+        header{
+            font-size: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        
         }
         button{
             background-color: green;
@@ -28,6 +35,17 @@
     </style>
 </head>
 <body>
+    <header>
+        <p>
+            ☀️
+        </p>
+        <p>
+            🌤️
+        </p>
+        <p>
+            🌦️
+        </p>
+    </header>
     <h1>Convert Celsius to Fahrenheit</h1>
     <button onclick="convertToFahrenheit()">Convert Celsius to Fahrnheit</button>
     <div id="temp">     
