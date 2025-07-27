@@ -1,13 +1,11 @@
-#thermometer{
-    border: 2px solid black;
-    display: flex;
-    flex-direction: column-reverse;
-    height: 300px;
-    justify-content: flex-start;
-    width: 30px;
+body{
+    background-color: #dedede;
+    font-family: arial;
 }
-.level{
-    height: 10%;
-    margin-bottom: 1px;
-    background-color: red;
+header{
+    padding: 20px;
+    text-align: center;
+}
+div{
+    
 }
