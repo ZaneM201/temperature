@@ -1,0 +1,13 @@
+#thermometer{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 300px;
+    justify-content: flex-start;
+    width: 30px;
+}
+.level{
+    height: 10%;
+    margin-bottom: 1px;
+    background-color: red;
+}

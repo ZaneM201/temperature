@@ -9,7 +9,7 @@ function convertTemperature(){
         result=(temp-32)*5/9;
         outputScale="°C"
     }else{
-        result= "Invalid scale. Please us 'C' for Celcius and 'F' for Fahrenheit."
+        result="Invalid scale. Please us 'C' for Celcius and 'F' for Fahrenheit."
     }
     document.getElementById("temperature").innerHTML="The tempurature is: " + result + outputScale;
 }
