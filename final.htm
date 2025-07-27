@@ -10,13 +10,18 @@
     <header>
         <h1>🌡️ Temperature Dashboard</h1>
     </header>
-    <div>
+    <div class="container">
         <h2>Convert a Temperature</h2>
-        <button onclick="celsiusToFahrenheit()">Celsius ➡ Fahrenheit</button>
-        <button onclick="fahrenheitToCelsius()">Fahrenheit ➡ Celsius</button>
-        <p id="temp">
-
+        <div class="btn">
+            <button class="temp" onclick="celsiusToFahrenheit()">Celsius ➡ Fahrenheit</button>
+            <button class="temp" onclick="fahrenheitToCelsius()">Fahrenheit ➡ Celsius</button>
+        </div>
+        <p id="result">
+            
         </p>
+        <div class="thermometer">
+            <div id="thermo"></div>
+        </div>
     </div>
     
 

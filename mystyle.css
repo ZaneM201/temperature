@@ -6,6 +6,36 @@ header{
     padding: 20px;
     text-align: center;
 }
-div{
-    
+h2{
+    text-align: center;
+}
+.container{
+    background-color: white;
+    border: solid 1px grey;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10%;
+    text-align: center;
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+.thermometer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 50px;
+}
+#thermo{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 300px;
+    width: 50px;
 }

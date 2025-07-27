@@ -1,5 +1,5 @@
 console.log("Temerature Dashboard");
-let p = document.getElementById("temp");
+let p = document.getElementById("result");
 function celsiusToFahrenheit(){
     let c = prompt("Enter Celsius:");
     p.innerHTML += `${c} °C = ${(c*9/5)+32} °F`;
