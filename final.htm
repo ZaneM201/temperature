@@ -13,8 +13,8 @@
     <div class="container">
         <h2>Convert a Temperature</h2>
         <div>
-            <button class="btn" onclick="celsiusToFahrenheit()">Celsius ➡ Fahrenheit</button>
-            <button class="btn" onclick="fahrenheitToCelsius()">Fahrenheit ➡ Celsius</button>
+            <button class="btn" onclick="clearResults() +  celsiusToFahrenheit() + fillThermo()">Celsius ➡ Fahrenheit</button>
+            <button class="btn" onclick="clearResults() + fahrenheitToCelsius() + fillThermo()">Fahrenheit ➡ Celsius</button>
         </div>
         <br>
         <p id="result">
@@ -26,7 +26,7 @@
     </div>
     <div class="table">
         <h2>Conversion Table (0 to 100 °C)</h2>
-        <button class="table-btn" onclick="generateTable()">Generate Table:</button>
+        <button class="table-btn" onclick="clearTable() + generateTable()">Generate Table:</button>
         <br>
         <table border="1">
         <thead>

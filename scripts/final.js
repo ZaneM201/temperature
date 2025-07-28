@@ -1,5 +1,8 @@
 console.log("Temerature Dashboard");
 let p = document.getElementById("result");
+function clearResults(){
+    p.innerHTML="";
+}
 function celsiusToFahrenheit(){
     let c = prompt("Enter Celsius:");
     p.innerHTML += `${c} °C = ${(c*9/5)+32} °F`;
@@ -7,10 +10,27 @@ function celsiusToFahrenheit(){
 function fahrenheitToCelsius(){
     let f = prompt("Enter Fahrenheit:");
     p.innerHTML += `${f} °F = ${(f-32)*5/9} °C`;
+    
 }
-
-
-
+function fillThermo(){
+    let thermo = document.getElementById("thermo");
+    for(let i=0; i<10; i++){
+        let level = document.createElement("div");
+        level.classList.add("level");
+        if(i<=10){
+           level.style.backgroundColor = "blue";
+        }else if(i<=25){
+            level.style.backgroundColor = "orange";
+        }else{
+            level.style.backgroundColor = "red";
+        }
+        thermo.appendChild(level);
+    }
+}
+function clearTable(){
+    let tbody = document.getElementById("tempTable");
+    tbody.innerHTML="";
+}
 function generateTable(){
     let tbody = document.getElementById("tempTable");
     for(let c=0; c<=100; c+=10){
@@ -18,6 +38,6 @@ function generateTable(){
         tbody.innerHTML += `<tr>
             <td> ${c} </td>
             <td> ${f} </td>
-        </tr>`
+        </tr>`;
     }
 }

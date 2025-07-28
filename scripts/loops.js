@@ -47,7 +47,7 @@ function fillThermo(){
         }else if(i<7){
             level.style.backgroundColor = "orange";
         }else{
-            level.style.backroundColor = "red";
+            level.style.backgroundColor = "red";
         }
         thermometer.appendChild(level);
     }

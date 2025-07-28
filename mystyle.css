@@ -42,17 +42,21 @@ table{
     line-height: 2rem;
 }
 .thermometer{
+    background-color: #dedede;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: auto;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 #thermo{
     border: 2px solid black;
-    border-radius: 30px;
     display: flex;
     flex-direction: column-reverse;
     height: 300px;
     width: 70px;
+}
+.level{
+    height: 10%;
+    background-color: red;
 }
