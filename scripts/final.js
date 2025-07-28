@@ -1,4 +1,5 @@
 console.log("Temerature Dashboard");
+/* converstion buttons */
 let p = document.getElementById("result");
 function clearResults(){
     p.innerHTML="";
@@ -49,6 +50,7 @@ function fahrenheitToCelsius(){
         thermometer.appendChild(level);
     }
 }
+/* converstion table */
 let tbody = document.getElementById("tempTable");
 function clearTable(){
     tbody.innerHTML="";
