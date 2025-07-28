@@ -5,7 +5,8 @@ function clearResults(){
 }
 function celsiusToFahrenheit(){
     let c = prompt("Enter Celsius:");
-    p.innerHTML += `${c} °C = ${(c*9/5)+32} °F`;
+    let f = (c*9/5)+32
+    p.innerHTML += `${c} °C = ${f.toFixed(1)} °F`;
     let thermometer = document.getElementById("thermo");
     let fillLevel=Math.round((c/100)*10)
     for(let i=0; i<10; i++){
