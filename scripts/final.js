@@ -1,4 +1,5 @@
 console.log("Temerature Dashboard");
+let tableValues="";
 /* converstion buttons */
 let p = document.getElementById("result");
 function clearResults(){
@@ -52,15 +53,23 @@ function fahrenheitToCelsius(){
 }
 /* converstion table */
 let tbody = document.getElementById("tempTable");
-function clearTable(){
-    tbody.innerHTML="";
-}
 function generateTable(){
+    tableValues="";
     for(let c=0; c<=100; c+=10){
         let f = (c*9/5)+32
-        tbody.innerHTML += `<tr>
+        tableValues += `<tr>
             <td> ${c} </td>
             <td> ${f} </td>
         </tr>`;
+    }
+    tbody.innerHTML=tableValues;
+}
+// if truethy
+function toggleTable(){
+    if(tableValues){
+        tableValues="";
+        tbody.innerHTML=tableValues;
+    }else{
+        generateTable();
     }
 }
